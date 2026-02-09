@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash Hogs - $SPLASH Memecoin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #87CEEB 0%, #E0BBE4 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #FF69B4;
+            letter-spacing: 2px;
+        }
+
+        .ticker {
+            background: linear-gradient(135deg, #FF69B4, #FF1493);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            color: #FF1493;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .pig-emoji {
+            font-size: 150px;
+            margin: 30px 0;
+            animation: splash 3s infinite;
+        }
+
+        @keyframes splash {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 60px 0;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature-card h3 {
+            color: #FF69B4;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .feature-emoji {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .social {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .social h2 {
+            color: #FF69B4;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-link {
+            background: linear-gradient(135deg, #FF69B4, #FF1493);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            font-size: 16px;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.4);
+        }
+
+        footer {
+            background: linear-gradient(135deg, #FF69B4, #FFB6C1);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .pig-emoji {
+                font-size: 100px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">🐷 SPLASH HOGS</div>
+            <div class="ticker">$SPLASH</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Welcome to Splash Hogs 🌊</h1>
+            <p>The Memecoin Making Waves in the Crypto Ocean!</p>
+            <div class="pig-emoji">🐷</div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-emoji">🚀</div>
+                <h3>To the Moon</h3>
+                <p>Splashing onto the crypto scene with explosive growth potential and community-driven momentum.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-emoji">🐷</div>
+                <h3>Community Driven</h3>
+                <p>Join thousands of hog enthusiasts building the strongest splash community in crypto.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-emoji">💰</div>
+                <h3>Transparent & Fair</h3>
+                <p>Fair launch, no hidden wallets. Splash Hogs is built for the people, by the people.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-emoji">🌊</div>
+                <h3>Making Waves</h3>
+                <p>Every transaction creates ripples. Be part of the movement that's changing crypto.</p>
+            </div>
+        </section>
+
+        <section class="social">
+            <h2>Join the Splash Hogs Community! 🐷💧</h2>
+            <p style="margin-bottom: 30px; color: #666; font-size: 16px;">Connect with us on social media and be part of the movement!</p>
+            <div class="social-links">
+                <a href="https://x.com/SPLASHHOGS" target="_blank" rel="noopener noreferrer" class="social-link">
+                    𝕏 Follow on X
+                </a>
+                <a href="https://t.me/splashhogportal" target="_blank" rel="noopener noreferrer" class="social-link">
+                    📱 Join Telegram
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Splash Hogs. All rights reserved. 🐷💧</p>
+    </footer>
+</body>
+</html>
